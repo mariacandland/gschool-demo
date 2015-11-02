@@ -1,0 +1,19 @@
+/*!
+Theme Name: WordPress Demo
+Theme URI: http://underscores.me/
+Author: Maria Candland
+Author URI: http://Maria.Candland
+Description: pitches and bitches
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gschool-demo
+*/
+
+@import 'normalize';
+    
+@import 'variables';
+@import 'mixins';
+@import'grid';
+
+@import 'modules/header';
