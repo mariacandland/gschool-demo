@@ -15,5 +15,9 @@ Text Domain: gschool-demo
 @import 'variables';
 @import 'mixins';
 @import'grid';
+@import 'links';
+@import 'typography';
+
 
 @import 'modules/header';
+@import 'modules/footer';

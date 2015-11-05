@@ -1,38 +1,38 @@
-$grid-gutter: 2%;
 
+
+/* Columns & Row */
 .row {
-	width: 85%;
-	max-width: 1100px;
-	margin: 0 auto;
-	@include clearfix;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+    @include clearfix;
 }
 
 .column {
-	float: left;
-	margin-right: $grid-gutter;
+    $gutter:2%;
+    border-right: 2px solid $black;
+  float: left;
+  margin-right: $gutter;
 
-	&.half {
-		width: (100% - ($grid-gutter * 1)) / 2;
-	}
+&.two-third {
+  width:(((100% / 3) * 2) - ($gutter / 2)); //65%
+}
+&.one-half {
+  width: (100% / 2) - ($gutter / 2); //49%
+}
+&.one-third {
+  width: ((100% / 3) - ($gutter / 2)); // 32%
+}
+    
+  
+    
+    &:last-of-type {
+  margin-right: 0;
+    border-right: 0px;
+}
 
-	&.third {
-		width: (100% - ($grid-gutter * 2)) / 3;
-	}
-
-	&.fourth {
-		width: (100% - ($grid-gutter * 3)) / 4;
-	}
-
-	&.fifth {
-		width: (100% - ($grid-gutter * 4)) / 5;
-	}
-
-	&:last-of-type {
-		margin-right: 0;
-	}
-
-	@include breakpoint(phone) {
-		width: 100% !important;
-		margin-right: 0;
-	}
+@include breakpoint(phone) {
+    width: 100% !important;
+    margin-right: 0;
+  }
 }

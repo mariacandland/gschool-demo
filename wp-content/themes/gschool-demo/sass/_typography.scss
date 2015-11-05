@@ -1,0 +1,51 @@
+* {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin font ( $style,$size:null){
+  font-size:$size;
+    
+    @if $size { 
+    font-size: $size;
+    }
+    @if $style == sans {
+        font-family: 'Bree Serif', serif;
+        font-weight: 400;
+    }   
+    @else if $style == sans {
+    font-family: 'Bree Serif', serif;
+        
+    }  
+}
+
+html{
+    
+    font-size: 62.5%;
+}
+
+
+body {
+  @include font (sans, 1.3rem);
+}
+
+h1,h2,h3,h4,h5{
+  @include font (serif);  
+    text-transform: uppercase;
+    }
+
+h1{font-size: 4rem;}
+
+h2{font-size: 2.5rem;}
+
+h3{font-size: 3rem;}
+
+h4{font-size: 2.5rem;}
+
+h5{font-size: 2rem;}
+
+
+
+.screen-reader-text {
+    display: none;
+}

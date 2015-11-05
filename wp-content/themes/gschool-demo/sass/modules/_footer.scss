@@ -1,5 +1,7 @@
-#masthead { 
-background: $black;
+footer#colophon.site-nav  {
+ background-color: black; 
+ color:$white;
+}
 
 h2{ 
     float: left; 
@@ -14,7 +16,7 @@ h2{
 li{
 list-style:none;
 display: inline-block;
-margin-right: 1em;
+margin-left: 1em;
 font-size:20px;
             
 &:last-of-type { margin-right: 0;} //Last <li> in row 
@@ -22,14 +24,14 @@ font-size:20px;
 a{
 color:$white;
 text-decoration: none;
+
+    
+
             
             }
             
         }  
         
     }
-}
 
-.menu-toggle{
-    display: none;
-}
+
