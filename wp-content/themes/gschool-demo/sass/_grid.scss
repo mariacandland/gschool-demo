@@ -4,13 +4,13 @@
 .row {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto 20px;
+  margin: 0 auto 0;
     @include clearfix;
 }
 
 .column {
     $gutter:2%;
-    border-right: 2px solid $black;
+//    border-right: 2px solid $black;
   float: left;
   margin-right: $gutter;
 
@@ -21,12 +21,12 @@
   width: (100% / 2) - ($gutter / 2); //49%
 }
 &.one-third {
-  width: ((100% / 3) - ($gutter / 2)); // 32%
+  width: ((95% / 3)- ($gutter / 2)); // 32%
 }
     
   
     
-    &:last-of-type {
+    &:nth-child(3n){
   margin-right: 0;
     border-right: 0px;
 }

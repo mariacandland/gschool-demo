@@ -12,14 +12,22 @@
 ?>
 
     <footer id="colophon" class="site-nav" role="contentinfo">
-<div class="row">
-    <div class="column half"><h2>&#060; Maria &#047; &#062;</h2></div>
-    <div class="column half"><p>Copyright  <?php echo date("F,d,Y"); ?> <?php bloginfo('Maria'); ?> - All Rights Reserved.</p></div>
+        <div class="row">
+            <div class="column one-half">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img id="footer-logo"/>
+                    <h2>&#060; Maria &#047;&#062;</h2>
+                </a>
+            </div>
+            <div class="column one-half">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </div>
+        </div>
+        <div class="row copyright">
+            <p>Copyright  <?php echo date("Y"); ?> <?php bloginfo('name'); ?> - All Rights Reserved.</p>
+        </div>
     
-  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>  
-    
-</div><!-- .site-info -->
-</footer><!-- #colophon -->
+    </footer><!-- #colophon -->
 </div><!-- #page -->
 
 

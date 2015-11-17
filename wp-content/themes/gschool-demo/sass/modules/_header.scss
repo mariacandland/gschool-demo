@@ -1,32 +1,32 @@
 #masthead { 
-background: $black;
+    background: $black;
 
-h2{ 
-    float: left; 
-    width: 150px;
-    margin: 1em 0;
-    color:$white;
-    }
+    h2 { 
+        float: left; 
+        width: 150px;
+        margin: 1em 0;
+        color:$white;
+        }
 
     .menu-main-navigation-container {
         float: right; 
-        
-li{
-list-style:none;
-display: inline-block;
-margin-right: 1em;
-font-size:20px;
-            
-&:last-of-type { margin-right: 0;} //Last <li> in row 
-            
-a{
-color:$white;
-text-decoration: none;
-            
+
+        li {
+            list-style:none;
+            display: inline-block;
+            margin-right: 1em;
+            font-size:20px;
+
+            &:last-of-type { margin-right: 0;} //Last <li> in row 
+
+            a {
+                color:$white;
+                text-decoration: none;
+
+                &:hover { color:$teal; }
+
             }
-            
-        }  
-        
+        }
     }
 }
 

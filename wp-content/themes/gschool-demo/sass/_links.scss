@@ -6,3 +6,19 @@ a {
       color: $white;
     }
 }
+
+
+.view-more {
+       display:block;
+        margin-top: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:$black;
+        font-size:1.1em
+            
+            span {
+                color:$gray;
+                margin-left: 0.25em;
+
+                }
+        }

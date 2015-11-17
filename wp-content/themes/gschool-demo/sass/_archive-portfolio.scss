@@ -1,0 +1,121 @@
+.portfolio-headline{
+    font-size: 30px;
+}
+
+
+
+.home.archive-portfolio{
+  text-align: center;  
+    padding:3em 0;
+    
+    .column {
+        padding:5em 0 2em;
+    @include background-image(scroll);
+        
+        
+//      Hover Font     
+        
+        h3,a {
+            color:$black;
+            opacity: 0;
+            position: relative;
+            z-index: 99;
+            @include ease;
+        }
+       
+        a {
+           $arrowOffset: 0.3em; 
+            
+            display: inline-block;
+            text-decoration: none;
+            height:2em - $arrowOffset;
+            width:2em;
+            padding-top: $arrowOffset;
+            border: 2px solid white;
+            border-radius:50%;
+        }
+        
+        &:after {
+            content:'';
+            background:$gray;
+            opacity:0;
+            position:absolute;
+            top: 0;
+            bottom:0;
+            left:0;
+            right:0;
+            @include ease;
+        }
+        
+        &:hover{
+            h3, a {opacity:1;
+            
+            &:after{
+                opacity: 0.8;
+            }
+        } 
+    }
+}
+    .view-more {
+       display:block;
+        margin-top: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:$black;
+        font-size:1.1em
+            
+            span {
+                color:$gray;
+                margin-left: 0.25em;
+
+                }
+        }
+}
+
+
+    .recent-blog {
+        background:$gray;
+        padding:3em,0;
+        h2{text-align: center;}
+    }
+
+    .blog-post{
+        background:$white;
+        padding:2em 3em;
+        margin-bottom: 2em;
+        text-align: center; 
+        box-shadow: 0 2px 5px darken($gray,20%);
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }     
+        .row{
+            width: 50%;
+        }     
+
+
+    p{
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    h3{
+        margin-top: 0;
+        padding-bottom: 0.25em;
+        margin-bottom: 0.53m;
+        border-bottom: 2px solid $black;
+    }
+
+    .read-more{
+        display:block;
+        text-align: right;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
