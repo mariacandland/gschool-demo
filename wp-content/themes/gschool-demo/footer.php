@@ -10,7 +10,7 @@
  */
 
 ?>
-
+</div>
     <footer id="colophon" class="site-nav" role="contentinfo">
         <div class="row">
             <div class="column one-half">

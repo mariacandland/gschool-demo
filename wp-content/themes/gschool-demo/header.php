@@ -22,7 +22,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="display-none" href="#content"><?php esc_html_e( ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
         <div class="row">
@@ -36,6 +35,7 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gschool-demo' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+        </div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

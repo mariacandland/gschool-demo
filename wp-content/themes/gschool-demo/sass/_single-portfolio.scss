@@ -1,0 +1,17 @@
+body.single-portfolio {
+text-align: center;  
+    
+        
+    .portfolio-hero {
+         @include background-image(scroll);
+        }
+    p.intro {}
+    
+}
+
+div.hline {
+border-bottom: solid #CCCCCC;
+border-bottom-width: 1px;
+width: 506px;
+}
+

@@ -2,7 +2,7 @@
 /**
  * Template Name: Home Page
  *
- * @package _s
+ *  @package WordPress_Demo
  */
 
 get_header();
@@ -36,10 +36,7 @@ get_header();
     <h3 class="service-title"><?php the_title(); ?></h3>
     <p class="service-description"><?php the_field('service_description'); ?></p>
 </div>
-        
-        
-        
-        
+
         
         <?php endwhile; ?>
 <?php wp_reset_postdata(); ?>
@@ -47,7 +44,15 @@ get_header();
         
         </div>
     </div>
-</div>
+    
+             
+            
+    <!-- Widgets -->
+    <div id="sidebar" class="widgets"
+   <?php dynamic_sidebar( 'home-page-widgets' ); ?>     
+         </div>
+            
+        
     
     <!-- Portfolio -->
 <div class="portfolio">

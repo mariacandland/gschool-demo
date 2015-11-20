@@ -2,23 +2,25 @@
  text-align: center;
     padding:10em 0;
     margin-bottom: 3em;
-    @include background-image;
+    @include background-image(scroll);
   
     
     h1,p{
-        color:$white;
+        color:$red;
         margin:0;
+        font-size: 2em;
     }
  
     h1{
         text-shadow: 0 2px 4x $black;
+        font-size: 5em;
     }  
     
 }
 
 
 .services{
-    background:lighten($blue,20%);
+    background:lighten($white,20%);
     padding:5em,0;
     
     .column {
@@ -26,7 +28,8 @@
         
         img {
             height:120px;
-        }
+        }  
+        
         
         h3 {
             position:relative;
@@ -36,7 +39,7 @@
             &:after {
                 $barWidth:100%;
                 content:'';
-                background:$blue;
+                background:$gray;
                 height: 0.2em;
                 width:$barWidth;
                 margin: 0.75 ((100%-$barWidth) /2 )0;
@@ -47,13 +50,15 @@
         }
     } 
 
-body.home .portfolio{
+ body.home .portfolio,
+body.single-portfolio .portfolio,
+body.post-type-archive-portfolio .portfolio{
   text-align: center;  
-    padding:3em 0;
+    padding:3em;
     
     .column {
         padding:5em 0 2em;
-    @include background-image(scroll);
+        @include background-image(scroll);
         
         
 //      Hover Font     
@@ -130,7 +135,7 @@ body.home .portfolio{
         box-shadow: 0 2px 5px darken($gray,20%);
 
         &:last-of-type {
-            margin-bottom: 0;
+            margin-bottom: 3em;
         }     
         .row{
             width: 50%;
@@ -156,6 +161,38 @@ body.home .portfolio{
         text-decoration: none;
         font-size: 1.2em;
     }
+}
+
+
+//portfolio
+
+h2.portfolio-headline.underline {
+    font-size: 3em;
+    text-align: center;
+}  
+
+    .nav-links{
+        @extend .row;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    .nav-previous{
+        float: left
+        }
+    .nav-next{
+        float:right;
+        }
+    }
+
+.widgets {
+    color: $blue;
+    float:none;
+    border: 2px solid $blue;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
 }
 
 

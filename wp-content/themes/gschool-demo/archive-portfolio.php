@@ -9,14 +9,14 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area portfolio"></div>
+<div id="primary" class="content-area portfolio">
 <main id="main" class="site-main" role="main">         
 
 
 
 <?php if ( have_posts() ) : ?>
 
-<h2 class="portfolio-headline underline">Work</h2>
+<h2 class="portfolio-headline underline">Portfolio: Archive</h2>
 
  <?php           
 the_archive_description( '<div class="taxonomy-description">', '</div>' );
@@ -40,20 +40,6 @@ the_archive_description( '<div class="taxonomy-description">', '</div>' );
 </div> <!-- End Row --> 
 
             
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 

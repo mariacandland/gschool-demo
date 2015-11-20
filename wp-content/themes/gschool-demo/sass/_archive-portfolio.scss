@@ -1,17 +1,22 @@
-.portfolio-headline{
-    font-size: 30px;
-}
-
-
-
-.home.archive-portfolio{
+body.archive-portfolio{
   text-align: center;  
     padding:3em 0;
-    
-    .column {
+}
+    .column.archive-portfolio {
         padding:5em 0 2em;
     @include background-image(scroll);
         
+      
+h2.portfolio-headline.underline {
+    font-size: 10rem;
+    text-align: center;
+}      
+        
+        h3.portfolio-title{
+            font-size:5em;
+            text-align: center;
+        }     
+           
         
 //      Hover Font     
         
@@ -70,51 +75,9 @@
 
                 }
         }
-}
 
 
-    .recent-blog {
-        background:$gray;
-        padding:3em,0;
-        h2{text-align: center;}
-    }
-
-    .blog-post{
-        background:$white;
-        padding:2em 3em;
-        margin-bottom: 2em;
-        text-align: center; 
-        box-shadow: 0 2px 5px darken($gray,20%);
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }     
-        .row{
-            width: 50%;
-        }     
-
-
-    p{
-        font-size: 1.5em;
-        margin-bottom: 2em;
-    }
-
-    h3{
-        margin-top: 0;
-        padding-bottom: 0.25em;
-        margin-bottom: 0.53m;
-        border-bottom: 2px solid $black;
-    }
-
-    .read-more{
-        display:block;
-        text-align: right;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
-}
-
+   
 
 
 
