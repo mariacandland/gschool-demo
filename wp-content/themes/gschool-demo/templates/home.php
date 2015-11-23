@@ -17,6 +17,8 @@ get_header();
     <p><?php the_field('hero_subheadline')?></p>
 </div>
             
+            
+            
     <!--  Services Section-->
 <div class="services">
     <div class="row">
@@ -33,7 +35,7 @@ get_header();
         
         <div class="column one-third">
     <img class="service-icon" src="<?php the_field('service_icon'); ?>">
-    <h3 class="service-title"><?php the_title(); ?></h3>
+    <h2 class="service-title"><?php the_title(); ?></h2>
     <p class="service-description"><?php the_field('service_description'); ?></p>
 </div>
 
@@ -49,6 +51,10 @@ get_header();
             
     <!-- Widgets -->
     <div id="sidebar" class="widgets"
+         
+	<div<h2 class="column one-third">			
+		
+</div></h2><!-- .widget-area -->
    <?php dynamic_sidebar( 'home-page-widgets' ); ?>     
          </div>
             
@@ -56,7 +62,7 @@ get_header();
     
     <!-- Portfolio -->
 <div class="portfolio">
-    <h2 class="portfolio-headline">Recent Work</h2>
+    <h3 class="portfolio-headline">Recent Work</h3>
 
     <div class="row">
 
@@ -89,7 +95,7 @@ get_header();
     
             <!-- Blog -->
 <div class="recent-blog">
-    <h2 class="blog-headline">Blog</h2>
+    <h4 class="blog-headline">Blog</h4>
 
     <div class="row">
 

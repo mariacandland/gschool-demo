@@ -326,7 +326,7 @@ footer#colophon.site-nav {
   html.touch .hero {
     background-attachment: scroll !important; }
   .hero h1, .hero p {
-    color: #E3170D;
+    color: #354B59;
     margin: 0;
     font-size: 2em; }
   .hero h1 {
@@ -340,16 +340,9 @@ footer#colophon.site-nav {
     text-align: center; }
     .services .column img {
       height: 120px; }
-    .services .column h3 {
+    .services .column h2 {
       position: relative;
       margin-top: 1.5em; }
-      .services .column h3:after {
-        content: '';
-        background: #808080;
-        height: 0.2em;
-        width: 100%;
-        margin: 0.75 0% 0;
-        display: block; }
 
 body.home .portfolio,
 body.single-portfolio .portfolio,
@@ -379,6 +372,12 @@ body.post-type-archive-portfolio .portfolio {
       z-index: 99;
       -webkit-transition: all 333ms ease-in-out;
               transition: all 333ms ease-in-out; }
+    body.home .portfolio .column h3 .portfolio-headline,
+    body.single-portfolio .portfolio .column h3 .portfolio-headline,
+    body.post-type-archive-portfolio .portfolio .column h3 .portfolio-headline {
+      padding-top: 100%;
+      padding-left: 14em;
+      text-align: center; }
     body.home .portfolio .column a,
     body.single-portfolio .portfolio .column a,
     body.post-type-archive-portfolio .portfolio .column a {
@@ -429,7 +428,7 @@ body.post-type-archive-portfolio .portfolio {
 .recent-blog {
   background: #808080;
   padding: 3em,0; }
-  .recent-blog h2 {
+  .recent-blog h4 {
     text-align: center; }
 
 .blog-post {
@@ -457,10 +456,6 @@ body.post-type-archive-portfolio .portfolio {
     text-decoration: none;
     font-size: 1.2em; }
 
-h2.portfolio-headline.underline {
-  font-size: 3em;
-  text-align: center; }
-
 .nav-links a {
   text-decoration: none;
   color: black; }
@@ -469,14 +464,14 @@ h2.portfolio-headline.underline {
 .nav-links .nav-next {
   float: right; }
 
-.widgets {
-  color: #354B59;
-  float: none;
-  border: 2px solid #354B59;
-  border-radius: 10px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 20px; }
+.widget {
+  float: left; }
+
+.widget.widget_archive {
+  padding-left: 1em; }
+
+.widget.widget_recent_entries {
+  padding-left: 15em; }
 
 body.archive-portfolio {
   text-align: center;

@@ -16,7 +16,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 
-<h2 class="portfolio-headline underline">Portfolio: Archive</h2>
+<h1 class="portfolio-headline underline">Portfolio: Archive</h1>
 
  <?php           
 the_archive_description( '<div class="taxonomy-description">', '</div>' );
